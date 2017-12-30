@@ -1,0 +1,328 @@
+/*Geral*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button.btn {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8125rem;
+    padding: 10px 15px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05),
+    0 4px 8px 0 rgba(0, 0, 0, 0.05);
+}
+
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-touch-callout: none;/* iOS Safari */
+    -webkit-user-select: none;    /* Safari */
+    -khtml-user-select: none;    /* Konqueror HTML */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;    /* Internet Explorer/Edge */
+    user-select: none;    /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.noselect img {
+    -webkit-user-drag: none;
+    user-drag: none;
+
+}
+
+
+@media(max-width:767px) {
+    .services-item {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+    #hero-content h1 {
+        font-size: 3rem !important;
+        margin-bottom: 4rem;
+    }
+}
+
+section {
+    color: #777777;
+}
+
+
+.h2 {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+
+}
+
+.h3-italic {
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.mt-6 {
+    margin-top: 5rem;
+}
+
+.pt-6 {
+    padding-top: 5rem;
+}
+
+.my-7 {
+    margin-top: 9rem;
+    margin-bottom: 5rem;
+}
+
+/*Menu*/
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bg-color {}
+
+.navbar-collapse ul li a.nav-link {
+    color: white;
+    font-size: 0.9375rem;
+}
+
+.navbar-collapse ul li a.nav-link.active {
+    color: #4981dd;
+}
+
+.navbar-collapse ul li a.nav-link:hover {
+    color: #4981dd;
+}
+
+/*header*/
+
+header {
+    background: url(../img/hero-bg.jpg) center center fixed;
+    background-size: cover;
+}
+
+header {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+#hero-content h1 {
+    text-transform: uppercase;
+    font-size: 3.875rem;
+}
+
+#hero-content p {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+#hero-content button {
+    color: white;
+    font-size: 0.875rem;
+}
+
+#hero-content a:hover {
+    padding: 20px 26px;
+    border-radius: 2.5rem;
+    background-color: rgba(73, 129, 221, 0.44);
+}
+
+/*About*/
+
+#about p {
+    font-size: 0.875rem;
+}
+
+#about img {
+    width: 100%
+}
+
+/*Portfolio*/
+.portfolio-img {
+    background: #4c8cf5;
+    opacity: 1;
+    position: relative;
+}
+
+.center-text-img {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+    color: white;
+}
+
+.portfolio-img img {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    width: 100%;
+    max-height: 252px;
+}
+
+.portfolio-img:hover img {
+    opacity: 0.15;
+}
+
+.portfolio-img:hover span {
+    display: block;
+}
+
+/*Testimonials*/
+#testimonials {
+    background: url(../img/testiomonial-bg.jpg) center center;
+    background-size: cover;
+    height: auto;
+}
+
+#testimonials p {
+    font-size: 1.125rem;
+}
+
+#testimonials footer {
+    background: none;
+}
+
+#testimonials footer {
+    font-size: 0.8rem;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin-top: 40px;
+}
+
+.carousel-indicators li {
+    border-radius: 100%;
+    width: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+/*Services*/
+#services p,
+#team p {
+    font-size: 0.875rem
+}
+
+#services h3,
+#team h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: black;
+}
+
+.services-item:hover span {
+    color: #4981dd;
+}
+
+.services-item span {
+    font-size: 1.7rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/*Team*/
+.team-item {
+    transition: 1s ease-in-out;
+    margin-top: 10px;
+}
+
+.team-item img {}
+
+.team-item:hover > .overlay {
+    bottom: 0;
+
+    height: 100%;
+}
+
+.overlay {
+    background-color: rgba(73, 129, 221, 0.69);
+    position: absolute;
+    bottom: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 90%;
+    max-width: 263px;
+
+    height: 0;
+    transition: .5s ease;
+}
+
+.text {
+    white-space: nowrap;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text a span {
+    transition: 0.3s all;
+}
+
+.text a span:hover {
+    color: black !important;
+    background: white !important;
+}
+
+
+/*Download*/
+#download {
+    background: url(../img/video-bg..jpg) center center;
+    background-size: cover;
+    height: auto;
+}
+
+
+/*Footer*/
+
+footer {
+    background: #222222;
+    font-size: 0.6875rem;
+}
+
+footer a {
+    transition: all 0.5s;
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #4981dd;
+}
